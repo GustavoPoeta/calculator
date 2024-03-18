@@ -5,6 +5,9 @@ function Calculator() {
     width: "50px",
     borderRadius: "30px",
     margin: "6px",
+    backgroundColor: "#778DA9",
+    color: "white",
+    fontSize: "16px",
   };
 
   const number = {
@@ -15,6 +18,9 @@ function Calculator() {
     flexWrap: "wrap",
     alignContent: "center",
   }
+
+
+  
 
   return (  
     <div style={number as React.CSSProperties}>

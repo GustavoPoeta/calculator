@@ -2,10 +2,12 @@
 
 function Header () {
 
-
+    const style = {
+        color: "white",
+    }
     return (
 
-        <div id="header">
+        <div style={style}>
             <h1>Welcome</h1>
         </div>
 

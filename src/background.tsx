@@ -10,13 +10,14 @@ function Background () {
         alignItems: "center",
         height: "80vh",
         width: "65vh",
-        backgroundColor: "black",
+        backgroundColor: "#1B263B",
+        flexDirection: "column",   
     }
 
 
     return (
 
-        <div id="background" style={style}>
+        <div id="background" style={style as React.CSSProperties}>
             <Result />
             <Calculator />
         </div>
