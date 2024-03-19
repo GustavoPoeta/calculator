@@ -10,13 +10,29 @@ function Calculator(props:any) {
     fontSize: "16px",
   };
 
+  let isPropsEqual:Boolean;
+
+  if (props.number == "=") {
+    style.backgroundColor = "#ef233c";
+    isPropsEqual = true; 
+  }
+
+
   const mouseOn = (number: any) => {
     number.target.style.background = "#669BBC";
   }
   const mouseOut = (number:any) => {
-    number.target.style.background = "#778DA9";
+    if (isPropsEqual === true) {
+      number.target.style.background = "#ef233c";
+    } else {
+      number.target.style.background = "#778DA9";
+    }
   }
-  
+
+  if (props.number == "=") {
+    style.backgroundColor = "#ef233c";
+  }
+
 
   return (  
     <div>

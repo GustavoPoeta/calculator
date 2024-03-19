@@ -1,3 +1,4 @@
+
 import Button from "./button.tsx";
 
 function Buttons () {
@@ -25,6 +26,13 @@ function Buttons () {
             <Button number= {2}/>
             <Button number= {1}/>
             <Button number= {0}/>
+            <Button number= {"+"}/>
+            <Button number= {"-"}/>
+            <Button number= {"X"}/>
+            <Button number= {"/"}/>
+            <Button number= {"%"}/>
+            <Button number= {"CL"}/>
+            <Button number= {"="}/>
         </div>
 
     );
