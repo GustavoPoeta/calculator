@@ -1,5 +1,5 @@
 import Result from "./result/result";
-import Calculator from "./calculator/calculator";
+import Buttons from "./calculator/buttons";
 
 
 function Background () {
@@ -19,7 +19,7 @@ function Background () {
 
         <div id="background" style={style as React.CSSProperties}>
             <Result />
-            <Calculator />
+            <Buttons />
         </div>
 
     );
