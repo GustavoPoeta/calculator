@@ -1,5 +1,6 @@
 import Result from "./result/result";
 import Buttons from "./calculator/buttons";
+import { useState } from "react";
 
 
 function Background () {
@@ -14,12 +15,13 @@ function Background () {
         flexDirection: "column",   
     }
 
+    const [input, setInput] = useState<any[]>([]);
 
     return (
 
         <div id="background" style={style as React.CSSProperties}>
-            <Result />
-            <Buttons />
+            <Result input={input}/>
+            <Buttons setInput={setInput} input={input}/>
         </div>
 
     );

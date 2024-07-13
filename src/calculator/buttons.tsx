@@ -1,7 +1,7 @@
 
 import Button from "./button.tsx";
 
-function Buttons () {
+function Buttons ({ setInput, input }: { setInput: React.Dispatch<React.SetStateAction<any[]>>, input: any[] }) {
     
     const style = {
         display: "inline-flex",
@@ -16,23 +16,23 @@ function Buttons () {
     return (
 
         <div style={style as React.CSSProperties}>
-            <Button number= {9}/>
-            <Button number= {8}/>
-            <Button number= {7}/>
-            <Button number= {6}/>
-            <Button number= {5}/>
-            <Button number= {4}/>
-            <Button number= {3}/>
-            <Button number= {2}/>
-            <Button number= {1}/>
-            <Button number= {0}/>
-            <Button number= {"+"}/>
-            <Button number= {"-"}/>
-            <Button number= {"X"}/>
-            <Button number= {"/"}/>
-            <Button number= {"%"}/>
-            <Button number= {"CL"}/>
-            <Button number= {"="}/>
+            <Button number= {9} setInput= {setInput} input= {input}/>
+            <Button number= {8} setInput= {setInput} input= {input}/>
+            <Button number= {7} setInput= {setInput} input= {input}/>
+            <Button number= {6} setInput= {setInput} input= {input}/>
+            <Button number= {5} setInput= {setInput} input= {input}/>
+            <Button number= {4} setInput= {setInput} input= {input}/>
+            <Button number= {3} setInput= {setInput} input= {input}/>
+            <Button number= {2} setInput= {setInput} input= {input}/>
+            <Button number= {1} setInput= {setInput} input= {input}/>
+            <Button number= {0} setInput= {setInput} input= {input}/>
+            <Button number= {"+"} setInput= {setInput} input= {input}/>
+            <Button number= {"-"} setInput= {setInput} input= {input}/>
+            <Button number= {"X"} setInput= {setInput} input= {input}/>
+            <Button number= {"/"} setInput= {setInput} input= {input}/>
+            <Button number= {"%"} setInput= {setInput} input= {input}/>
+            <Button number= {"CL"} setInput= {setInput} input= {input}/>
+            <Button number= {"="} setInput= {setInput} input= {input}/>
         </div>
 
     );

@@ -8,7 +8,7 @@ function Header () {
     return (
 
         <div style={style}>
-            <h1>Welcome</h1>
+            <h1>Calculator</h1>
         </div>
 
     );
